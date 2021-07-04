@@ -15,7 +15,7 @@ ENV DSURVIVAL_VERSION v1.0.0
 ENV ROCK_LIB /var/lib/rock/R/library
 
 # Additional system dependencies
-#RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ???
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y libgdal-dev gdal-bin libproj-dev proj-data proj-bin libgeos-dev
 
 # Update R packages
 #RUN Rscript -e "update.packages(ask = FALSE, repos = c('https://cloud.r-project.org'), instlib = '/usr/local/lib/R/site-library')"
