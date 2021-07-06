@@ -6,7 +6,7 @@
 
 FROM datashield/rock-base:latest
 
-ENV DSURVIVAL_VERSION master
+ENV DSURVIVAL_VERSION main
 
 ENV ROCK_LIB /var/lib/rock/R/library
 
