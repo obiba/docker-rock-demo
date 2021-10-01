@@ -7,10 +7,10 @@ no_cache=false
 
 # Build Docker image
 build-image:
-	sudo docker build --no-cache=$(no_cache) -t="obiba/rock-demo:survival" .
+	sudo docker build --no-cache=$(no_cache) -t="obiba/rock-demo:geo" .
 
 push-image:
-	sudo docker image push obiba/rock-demo:survival
+	sudo docker image push obiba/rock-demo:geo
 
 up:
 	docker-compose -f $(docker_compose_file) up -d --remove-orphans
