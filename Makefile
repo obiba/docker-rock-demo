@@ -3,6 +3,14 @@
 #
 
 docker_compose_file=docker-compose.yml
+no_cache=false
+
+# Build Docker image
+build-image:
+	sudo docker build --no-cache=$(no_cache) -t="obiba/rock-demo:survival" .
+
+push-image:
+	sudo docker image push obiba/rock-demo:survival
 
 up:
 	docker-compose -f $(docker_compose_file) up -d --remove-orphans
